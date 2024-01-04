@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>input 외 입력 태그들</title>
+</head>
+<body>
+    <fieldset>
+        <legend>주문서</legend>
+    <h2>MENU</h2>
+    <select>
+        <!-- select뒤에 multiple 넣어주면 복수 선택가능(컨트롤 누른채 선택) -->
+        <option value="coffee">아메리카노</option>
+        <option value="cafelatte">카페라떼</option>
+        <option value="vanilla">바닐라라떼</option>
+        <option value="water" selected>미네랄워터</option>
+        <!-- selected: 노출되는 선택지로 만듦/ 속성값이 없고 이름만 있는 속성  -->
+    </select>
+    
+    <h2>다른 메뉴를 원하시면 자유롭게 써주세요</h2>
+    <textarea cols="22" rows="10"></textarea>
+     <!-- textarea는 마우스로 크기지정이 마음대로 가능;;
+    cols랑 rows가 별의미가 없어짐. -->
+    </fieldset>
+    
+    <h2>음료 준비중...</h2>
+    <progress max="100" value="80"></progress>
+
+    <h2>추가 용무가 있으시면 호출해주세요</h2>    
+    <button>호출</button>
+</body>
+</html>

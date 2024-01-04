@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <P>모든 항목에 빠짐없이 체크해주십시오.</P>
+    </header>
+    
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" name="name"
+                id="name" placeholder="본명을 입력하세요">
+                <label for="email">이메일</label> 
+                <input type="email" name="email"
+                id="email" placeholder="메일 주소">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                
+                <p>연령대가 어떻게 되십니까?</p>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+
+                <p>선호하는 운동을 모두 고르시오</p>
+                <input type="checkbox" id="crossfit" name="crossfit">
+                <label for="crossfit">크로스 핏</label>
+                <input type="checkbox" id="swimming" name="swimming">
+                <label for="swimming">수영</label>
+                <input type="checkbox" id="zzz" name="zzz">
+                <label for="zzz">주짓수</label>
+                <input type="checkbox" id="baskit" name="baskit">
+                <label for="baskit">농구</label>
+            </fieldset>
+            <fieldset>
+                <legend>기타의견</legend>
+                <textarea rows="2" cols="30" name="comment"></textarea>
+            </fieldset>
+            <input type="submit"></form>
+        </form> <!--name의 역할이 생각보다 꽤 중요하다!-->
+    </main>
+    <hr>
+    <footer>
+        <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+   
+</body>
+</html>
