@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>박스 모델이란</title>
+</head>
+<style>
+    .area{
+        /* 
+        px: 화소에 대한 절대적인 값을 기준으로 계산
+        %: 내가 속한 영역을 기준으로 백분율 계산 (상대적인 값)
+         */
+        width: 200px;
+        height: 50%; /*--> 높이는 퍼센테이지가 먹히지 않음. 왜냐하면
+        p가 속한 body의 값을 기준으로 바뀌어야하는데 body는 화면의 크기에
+        따라 바뀌기 때문에 기본 값이 없어서 */
+    }
+</style>
+<body>
+    <h2>현진영 - 흐린 기억 속의 그대</h2>
+    <p>안개빛 조명은 흐트러진 내 몸을 감싸고</p>
+    <p class="area">술에 취해 비틀거리는 나의 모습 이제는 싫어</p>
+</body>
+</html>
