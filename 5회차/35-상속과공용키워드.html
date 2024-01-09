@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>상속과 공용키워드</title>
+    <style>
+        .list{
+            /* 상속되는 애 */
+            color: tomato;
+            font-weight: 900;
+            font-style: italic;
+
+            /* 상속 안 되는 애 */
+            border: 3px dashed pink;
+            padding: 0;
+        }
+
+        .ul{
+            border: inherit;
+        }
+        li:nth-child(3){
+            color: unset; /*unset: 상속받을게 있으면 받고 없으면 안받음 */
+            font-weight: initial/*inherit과 initial, unset은 모든 css속성에 적용가능한 공용키워드 또는 전역키워드라 부름. */;
+            font-style: initial
+        }
+    </style>
+</head>
+<body>
+    <h2>My wishlist</h2>
+    <div class="list">
+        <ul>
+            <li>Mac book Pro</li>
+            <li>Goodnote Diary</li>
+            <li>Buildings</li>
+            <li>100 trillion</li>
+
+        </ul>
+    </div>
+</body>
+</html>

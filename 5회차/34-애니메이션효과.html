@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>애니메이션 효과</title>
+    <style>
+        .eyes{
+            width: 530px;
+            margin: auto;
+        }
+        .eye{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 100px;
+            position: relative;
+        }
+        .eye:nth-child(1){ float: left; }
+        .eye:nth-child(2){ float: right; }
+     
+        .shine{
+            width: 30px;
+            height: 35px;
+            transform: rotate(38deg);
+            background-color: white;
+            border-radius: 50px;
+            position: absolute; /*앱솔루트의 특징: 상위요소의 위치를 기준으로 함.*/
+            left: 10px;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 100px;
+            position: absolute;
+            top: 80px;
+            left: 30px;
+        
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+/*  단축속성 animation에 한줄로 이어서 써도 됨.하위속성의 값만 공백으로 잘 구분해주면 됨
+            ex) animation: moving 2s 0s alternate infinite ease-in */
+        }
+
+        .ball:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes moving {
+            from{ left: 20px;}
+            to{left: 90px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="eyes">
+        <div class="eye">
+            <div class="ball">
+                <div class="shine"></div>
+            </div>
+        </div>
+        <div class="eye">
+            <div class="ball">
+            <div class="shine"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

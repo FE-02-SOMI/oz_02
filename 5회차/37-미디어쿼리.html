@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title> 
+    <!--미디어 쿼리(media query)는 미디어 타입을 인식하고,
+        콘텐츠를 읽어들이는 브라우저의 물리적 속성을 감지할 수 있는
+        유용한 모듈(기능)이다. 모든 미디어 쿼리는 다음 두 가지 구성 요소를
+        지니고 있다. 1.미디어 타입 2.조건에 대한 물음(쿼리)-->
+<style>
+    div.box{
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+    }
+
+    @media screen and (max-width: 800px) /*최대 800픽셀이므로 800픽셀보다 작을때*/ {
+        div.box{      /*min-width:800px이면 최소 800픽셀이므로 800픽셀보다 큰경우*/
+            background-color: aquamarine;
+        }   
+    }
+    @media screen and (min-width: 1000px) 
+        { div.box{
+            background-color: red;
+        }}
+</style>
+</head>
+<body>
+    <div class="box"></div> 
+
+</body>
+</html>
