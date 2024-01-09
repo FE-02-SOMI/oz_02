@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>선택자 더 알아보기</title>
+</head>
+<style>
+    /*
+    기호와 함께 사용하는 속성 선택자
+    * : 값의 포함 여부
+    ^ : 값의 시작 여부
+    $ : 값의 끝 여부
+    */
+    img[alt]{ /*대괄호를 사용해서 속성선택, 태그명이 없어도 적용가능*/
+        border: 2px dashed palevioletred;
+    }
+    [width *= "5"]{ /*5를 포함한 것 지정*/
+        border: 5px dashed rebeccapurple;
+    }
+    [width ^= "2"]{ /*2로 시작하는 것 지정*/
+        border: 3px dashed red;
+    }
+
+    body p{
+        color: skyblue;
+    }
+    body em{ /*또는 하위요소 선택자인 >를 써서 쓸 수 있다. p의 한단계 밑이므로
+        p > em 이렇게 쓰면 같은 것을 선택한 효과(자식요소 선택하기)*/
+        color: blue;
+    }
+    #sam + p /*+로 연결해주면 내 바로 다음 형제 요소 선택함,
+               ~은 모든 형제 선택자*/
+    {
+        color: orange;
+    }/*형제 선택자는 뒤이어서 있는 형제들만 대상으로 함
+    / 예를 들어 앞에 있는 형제인 이미지로 선택하게 되면 안먹힘.*/
+</style>
+<body>
+    <img src="img/77.png" width="120" alt="행운의 부적">
+    <img src="img/77.png" width="220">
+    <img src="img/77.png" width="50" id="sam">
+    <p>이 부적은 모든일이 잘 풀리게 돕는 행운의 부적입니다.</p>
+    <p>이 부적이 뜻하는 것은 온 세상이 내가 잘 되게 돕는다는 것 입니다.</p>
+    <p>꼭 <em>이 부적</em>이 없어도 온 세상이 나를 돕고, 일이 잘 풀립니다.</p>
+    <p>다만, 이 부적은 귀여워서 볼 때마다 기분이 좋아집니다.</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid palevioletred;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: white;
+            background-color: gray;
+        }
+        a:active{
+            color: white;
+            background-color: black;
+        }
+        /* th-child는 형제들중에 어디쯤 있는 애를 선택한다라는 뜻의 의사클래스 */
+        li:nth-child(n){ /*n은 자연수 2n은 짝수 2n-1홀수*/
+            font-size: 20px;
+        }
+        /* 의사클래스: 특정상태 선택 */
+        /* 의사요소: 일부분만 선택 */
+        a::first-letter{
+            color: blueviolet;
+        }
+
+        a::after{ /*의사요소중 after와 before는 요소를 생성할 수 있음.*/
+            content: "보기";
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+    </ul>
+</body>
+</html>

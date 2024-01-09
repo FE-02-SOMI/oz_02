@@ -9,10 +9,18 @@
             width: 300px;
             height: 300px;
             padding: 20px;
-            border: 20px double brown;
+            border: 20px double white;
 
-            background-color: wheat;
-            background-clip: content-box; /*-->콘텐츠박스까지 */
+            /* background-color: wheat; */
+            background-clip: border-box; /*-->콘텐츠박스까지 */
+
+            background-image: url(../1회차/images/swim.jpg);
+            background-size: 380px 380px;
+            background-repeat: no-repeat; /*->이미지가 반복되지 않게 함*/
+
+            background-origin: border-box; /*->이미지가 어디서부터 시작할지 영역 정해줌*/
+            background-position: left; /*이미지 위치이동, 세부적인 이동은 100px 50px
+            이렇게 수치를 정해주면 됨, x축으로 수치가 커질수록 오른쪽으로 이동,y=50px아래쪽으로*/
         }
     </style>
 </head>

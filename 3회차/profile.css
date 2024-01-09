@@ -1,0 +1,51 @@
+*{
+    text-align: center;
+}
+
+html{
+    width: 600px;
+    height: 800px;
+   
+    margin: auto;
+    border: 2px double #fa337f;
+    border-radius: 10px;
+
+    background-color: 	rgb(0, 0, 0);
+    
+    font-size: 11px;
+       
+}
+
+body{
+    width: 600px;
+    
+    margin: auto; /*너비에서 남는 여백을 동일하게 분배*/
+    color: antiquewhite;
+}
+
+h1{
+    font-size: 26px;
+    color: black;
+    margin-top: 0;
+    background-color: #fa337f;
+    background-clip: border-box;
+}
+h3{
+    font-size: 16px;
+    font-weight: 900;
+
+}
+
+img{
+    width: auto;
+    height: 300px;
+   
+}
+ul{
+    text-align: left;
+}
+#intro{
+    font-size: 1.3rem;
+    color: rgb(207, 240, 240);
+    font-weight: 100;
+}

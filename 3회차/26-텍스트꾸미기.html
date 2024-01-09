@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>텍스트 꾸미기</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            html{
+                font-size: 8px;
+            }
+            body{
+                font-size: 32px
+            }
+            #first{
+                font-size: 0.5em; /*em 자기를 품고 있는 부모태그(32px)에 0.5를 곱함*/
+                /* font-size: 3rem; rem:루트크기요소에 배수한다.*루트요소는 html태그를 뜻함*/
+                font-weight: 900; /*글자두께 /ex 100일때는 이폰트가 가진 가장 얇은 두께, 900일때 가장 굵은*/
+                line-height: 16px; /*행높이, 50이면 엄청 넓은거*/ 
+                text-align: center; /* 정렬방법이고 4가지가 있음/ex justify:양끝정렬 */
+            }
+        </style>
+</head>
+<body>
+    <p id="first">에스프레소와 물을 섞으면 아메리카노</p>
+    <p>에스프레소와 물을 섞으면 아메리카노</p>
+</body>
+</html>

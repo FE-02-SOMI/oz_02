@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>요소의 유형</title>
+    <style>
+        p{
+            display: none; 
+            /* ㄴnone:화면에 보이지 않고, 없는것 처럼 인식함 */
+            width: 100px;
+            height: 100px;
+            /* 인라인 요소는 높이/길이 지정이 먹히지 않음,
+            하지만 inline-block 을 사용하면 인라인요소이지만 크기지정이 가능한
+            블록 속성을 띄게 됨 */
+        }
+    </style>
+</head>
+<body>
+    <p>경제</p>
+    <p>정치</p>
+    <p>과학</p>
+    <p>생활</p>
+    <span>화면</span>
+    <!-- 
+        블록 레벨 요소인 div 요소를 
+        인라인으로 처리하고 싶다면
+        div{display: inline;} 
+        인라인 요소인 a 요소를 블록 레벨로
+        처리하고 싶다면
+        a{dispaly: block;}
+    -->
+</body>
+
+</html>
