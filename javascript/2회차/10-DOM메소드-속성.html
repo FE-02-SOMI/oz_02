@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM 메소드 및 속성</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 id="song-title" class="headingtext"
+    title="VOS의 2019년 발매곡">
+        <span>다시 만날까 봐</span>
+    </h1>
+    <p class="lyrics">
+        인스타로 몰래 보는 너의 하루들 누가 봐도 헤어진 티를 내
+    </p>
+    <p class="lyrics">
+        팔로우 다 끊고서 좋아요는 왜 눌렀니 (ㅋㅋ)
+    </p>
+    <script>
+        console.log(document.querySelectorAll(".lyrics"))
+        console.log(
+            document.getElementsByClassName("lyrics")
+        )
+        const title = document.getElementById("song-title")
+        console.log(title)
+
+        console.log(title.textContent)
+        console.log(title.innerText)
+        console.log.(title.className)
+        console.log(title.style) //지정된 스타일값이 없으므로 내용없이 항목만 나열되고 있음.
+        console.log(title.title) //내가 지정한 요소의 타이틀 값을 표현. 메소드는 주로 선택,속성들은 선택요소에 대한 값을 확인.
+    </script>
+</body>
+</html>
