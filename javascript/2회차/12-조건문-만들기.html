@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조건문 만들기</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    <h1></h1>
+    <h1></h1><br>
+    
     <p></p>
 
     <script>
@@ -23,8 +29,11 @@
 
         if(age >=20){
             p.textContent = "1250원입니다."
-        }else{
+        }else if(age >=8){
             p.textContent = "760원입니다!"
+        }
+        else{
+            p.textContent = "무료입니다!"
         }
 </script>
 </body>
